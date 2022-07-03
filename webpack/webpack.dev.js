@@ -6,6 +6,9 @@ module.exports = {
   devServer: {
     hot: true,
     open: true,
+    client: {
+      overlay: false,
+    },
   },
   plugins: [new ReactRefreshWebpackPlugin()],
 }
