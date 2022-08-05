@@ -1,11 +1,12 @@
 import React from 'react'
-import { Counter } from '@/components/Counter'
+import { Index } from '@/components/Counter'
+import { StyledWrapper } from '@/components/Counter/styles'
 export const App = () => {
   return (
-    <>
-      <h1>Hello!!!!</h1>
+    <StyledWrapper>
+      <h1>Hello! ! !</h1>
       <div>1234</div>
-      <Counter />
-    </>
+      <Index />
+    </StyledWrapper>
   )
 }
