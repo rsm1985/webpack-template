@@ -1,2 +1,2 @@
-declare module './images/*.png'
-declare module './images/*.svg'
+declare module './assets/*.png'
+declare module './assets/*.svg'
