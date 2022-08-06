@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
@@ -47,6 +49,9 @@ module.exports = {
       emitWarning: true,
       failOnWarning: false,
       failOnError: false,
+    }),
+    new CopyPlugin({
+      patterns: [{ from: 'src/assets', to: 'assets' }],
     }),
   ],
 }
