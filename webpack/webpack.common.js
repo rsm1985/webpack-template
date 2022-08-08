@@ -9,7 +9,8 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.png'],
     alias: {
-      '@': require('path').resolve(__dirname, '..', 'src'),
+      '@': path.resolve(__dirname, '..', 'src'),
+      '@/assets': path.resolve(__dirname, '..', 'src/assets'),
     },
   },
   optimization: {
@@ -67,6 +68,7 @@ module.exports = {
     filename: '[name].[hash:8].js',
     // sourceMapFilename: '[name].[hash:8].map',
     chunkFilename: '[id].[hash:8].js',
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
