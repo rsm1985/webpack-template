@@ -29,18 +29,19 @@
     "resolveJsonModule": true,
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
-    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
     "paths": {
       "@/components/*": [
-        "src/components/*"
+        "components/*"
       ],
       "@/assets/*": [
-        "src/assets/*"
+        "assets/*"
       ]
     }
   },
   "include": [
-    "src/**/*"
+    "src"
   ],
   "exclude": ["node_modules"]
 }

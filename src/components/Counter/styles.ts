@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
-  color: red;
+  color: green;
 `

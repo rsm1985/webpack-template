@@ -7,10 +7,11 @@ const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.png'],
+    extensions: ['*', '.tsx', '.ts', '.js', '.png'],
     alias: {
       '@': path.resolve(__dirname, '..', 'src'),
       '@/assets': path.resolve(__dirname, '..', 'src/assets'),
+      '@/components': path.resolve(__dirname, '..', 'src/components'),
     },
   },
   optimization: {
